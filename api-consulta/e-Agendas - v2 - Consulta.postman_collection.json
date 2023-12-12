@@ -13,133 +13,17 @@
 			"item": [
 				{
 					"name": "OgaoPorID",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Response status code is 200\", function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
-									"  const responseData = pm.response.json();",
-									"  ",
-									"  pm.expect(responseData.sucesso).to.be.true;",
-									"});",
-									"",
-									"pm.test(\"Validate the 'resposta' object is present and not empty\", function () {",
-									"    const responseData = pm.response.json();",
-									"    ",
-									"    pm.expect(responseData).to.be.an('object');",
-									"    pm.expect(responseData.resposta).to.exist.and.to.not.be.empty;",
-									"});",
-									"",
-									"pm.test(\"Verify that the 'orgaos' array is present and contains at least one element\", function () {",
-									"    const responseData = pm.response.json();",
-									"    ",
-									"    pm.expect(responseData).to.be.an('object');",
-									"    pm.expect(responseData.resposta['orgaos']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/api/v2/orgaos/1427",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"orgaos",
-								"1427"
-							]
-						}
+						"header": []
 					},
 					"response": []
 				},
 				{
 					"name": "OrgaosPorFiltros",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"exec": [
-									"pm.test(\"Response status code is 200\", function () {",
-									"  pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
-									"  const responseData = pm.response.json();",
-									"  ",
-									"  pm.expect(responseData.sucesso).to.be.true;",
-									"});",
-									"",
-									"pm.test(\"Validate the 'resposta' object is present and not empty\", function () {",
-									"    const responseData = pm.response.json();",
-									"    ",
-									"    pm.expect(responseData).to.be.an('object');",
-									"    pm.expect(responseData.resposta).to.exist.and.to.not.be.empty;",
-									"});",
-									"",
-									"pm.test(\"Verify that the 'orgaos' array is present and contains at least one element\", function () {",
-									"    const responseData = pm.response.json();",
-									"    ",
-									"    pm.expect(responseData).to.be.an('object');",
-									"    pm.expect(responseData.resposta['orgaos']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/api/v2/orgaos",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"orgaos"
-							],
-							"query": [
-								{
-									"key": "nome",
-									"value": "turismo",
-									"disabled": true
-								},
-								{
-									"key": "codigo",
-									"value": "241",
-									"disabled": true
-								},
-								{
-									"key": "situacao",
-									"value": "Ativo",
-									"disabled": true
-								},
-								{
-									"key": "situacao",
-									"value": "Inativo",
-									"disabled": true
-								},
-								{
-									"key": "sigla",
-									"value": "MAPA",
-									"disabled": true
-								}
-							]
-						}
+						"header": []
 					},
 					"response": []
 				}
@@ -643,7 +527,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v2/agentes-publicos-obrigados/8860",
+							"raw": "{{url}}/api/v2/agentes-publicos-obrigados/1219",
 							"host": [
 								"{{url}}"
 							],
@@ -651,7 +535,7 @@
 								"api",
 								"v2",
 								"agentes-publicos-obrigados",
-								"8860"
+								"1219"
 							]
 						}
 					},
@@ -709,7 +593,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v2/agentes-publicos-obrigados?orgao_id=832&nome_apo=Marcelo pontes&situacao=ativo",
+							"raw": "{{url}}/api/v2/agentes-publicos-obrigados?orgao_id=832&situacao=ativo",
 							"host": [
 								"{{url}}"
 							],
@@ -735,7 +619,8 @@
 								},
 								{
 									"key": "nome_apo",
-									"value": "Marcelo pontes"
+									"value": "Marcelo pontes",
+									"disabled": true
 								},
 								{
 									"key": "situacao",
@@ -1033,6 +918,749 @@
 				}
 			]
 		},
+		{
+			"name": "Afastamentos e Substituições",
+			"item": [
+				{
+					"name": "AfastamentosPorID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "AfastamentosPorPeriodoApo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "SubstituicaoPorID",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "SubstituicoesPorPeriodoApo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Presentes e Hospitalidades",
+			"item": [
+				{
+					"name": "PresenteHospitalidadePorID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"pm.test(\"Validate the 'resposta' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.resposta).to.be.an('object');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/presentes-hospitalidades/36",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"presentes-hospitalidades",
+								"36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PresentesHospitalidadesPorApo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field in the response\", function () {",
+									"  const responseData = pm.response.json();",
+									"",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.sucesso).to.exist.and.to.be.a('boolean');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the id field in presentes-hospitalidades array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData[\"resposta\"][\"presentes-hospitalidades\"]).to.be.an('array');",
+									"    ",
+									"    responseData[\"resposta\"][\"presentes-hospitalidades\"].forEach(function (item) {",
+									"        pm.expect(item[\"id\"]).to.be.a('number');",
+									"        pm.expect(item[\"id\"]).to.be.at.least(0);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/presentes-hospitalidades?data_inicio=01-01-2022&data_termino=16-12-2023&apo_id=3917",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"presentes-hospitalidades"
+							],
+							"query": [
+								{
+									"key": "data_inicio",
+									"value": "01-01-2022"
+								},
+								{
+									"key": "data_termino",
+									"value": "16-12-2023"
+								},
+								{
+									"key": "apo_id",
+									"value": "3917"
+								},
+								{
+									"key": "orgao_id",
+									"value": "1442",
+									"disabled": true
+								},
+								{
+									"key": "cargo_comissao_id",
+									"value": "4493",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PresentesHospitalidadesPorOrgaoCargo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field in the response\", function () {",
+									"  const responseData = pm.response.json();",
+									"",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.sucesso).to.exist.and.to.be.a('boolean');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').with.lengthOf.at.least(1);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the id field in presentes-hospitalidades array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData[\"resposta\"][\"presentes-hospitalidades\"]).to.be.an('array');",
+									"    ",
+									"    responseData[\"resposta\"][\"presentes-hospitalidades\"].forEach(function (item) {",
+									"        pm.expect(item[\"id\"]).to.be.a('number');",
+									"        pm.expect(item[\"id\"]).to.be.at.least(0);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/presentes-hospitalidades?data_inicio=01-01-2023&data_termino=16-02-2023&orgao_id=1442&cargo_comissao_id=4493",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"presentes-hospitalidades"
+							],
+							"query": [
+								{
+									"key": "data_inicio",
+									"value": "01-01-2023"
+								},
+								{
+									"key": "data_termino",
+									"value": "16-02-2023"
+								},
+								{
+									"key": "apo_id",
+									"value": "14365",
+									"disabled": true
+								},
+								{
+									"key": "orgao_id",
+									"value": "1442"
+								},
+								{
+									"key": "cargo_comissao_id",
+									"value": "4493"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Viagens",
+			"item": [
+				{
+					"name": "ViagemPorID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'resposta' object is present and not empty\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta).to.exist.and.to.not.be.empty;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'viagens' array is present and contains at least one element\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData['viagens']).to.exist.and.to.be.an('array').with.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v2/viagens/985",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"viagens",
+								"985"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViagensPorApo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field in the response\", function () {",
+									"  const responseData = pm.response.json();",
+									"",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.sucesso).to.exist.and.to.be.a('boolean');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData['presentes-hospitalidades']).to.exist.and.to.be.an('array').with.lengthOf.at.least(1);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the id field in presentes-hospitalidades array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData[\"resposta\"][\"presentes-hospitalidades\"]).to.be.an('array');",
+									"    ",
+									"    responseData[\"resposta\"][\"presentes-hospitalidades\"].forEach(function (item) {",
+									"        pm.expect(item[\"id\"]).to.be.a('number');",
+									"        pm.expect(item[\"id\"]).to.be.at.least(0);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v2/viagens?data_inicio=01-01-2022&data_termino=04-10-2024&apo_id=3091",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"viagens"
+							],
+							"query": [
+								{
+									"key": "data_inicio",
+									"value": "01-01-2022"
+								},
+								{
+									"key": "data_termino",
+									"value": "04-10-2024"
+								},
+								{
+									"key": "apo_id",
+									"value": "3091"
+								},
+								{
+									"key": "orgao_id",
+									"value": "1442",
+									"disabled": true
+								},
+								{
+									"key": "cargo_comissao_id",
+									"value": "4493",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViagensPorOrgaoCargo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field in the response\", function () {",
+									"  const responseData = pm.response.json();",
+									"",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.sucesso).to.exist.and.to.be.a('boolean');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData['presentes-hospitalidades']).to.exist.and.to.be.an('array').with.lengthOf.at.least(1);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the id field in presentes-hospitalidades array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData[\"resposta\"][\"presentes-hospitalidades\"]).to.be.an('array');",
+									"    ",
+									"    responseData[\"resposta\"][\"presentes-hospitalidades\"].forEach(function (item) {",
+									"        pm.expect(item[\"id\"]).to.be.a('number');",
+									"        pm.expect(item[\"id\"]).to.be.at.least(0);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v2/viagens?data_inicio=01-01-2023&data_termino=16-02-2023&apo_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"viagens"
+							],
+							"query": [
+								{
+									"key": "data_inicio",
+									"value": "01-01-2023"
+								},
+								{
+									"key": "data_termino",
+									"value": "16-02-2023"
+								},
+								{
+									"key": "apo_id",
+									"value": "1"
+								},
+								{
+									"key": "orgao_id",
+									"value": "1442",
+									"disabled": true
+								},
+								{
+									"key": "cargo_comissao_id",
+									"value": "4493",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Objetivos",
+			"item": [
+				{
+					"name": "ObjetivosCompromisso",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"pm.test(\"Validate the 'resposta' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.resposta).to.be.an('object');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/objetivos-compromissos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"objetivos-compromissos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObjetivoByID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"pm.test(\"Validate the 'resposta' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.resposta).to.be.an('object');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/objetivos/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"objetivos",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Objetivos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"pm.test(\"Validate the 'resposta' field is true\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.resposta).to.be.an('object');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the 'presentes-hospitalidades' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['presentes-hospitalidades']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v2/objetivos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"objetivos"
+							],
+							"query": [
+								{
+									"key": "tipo_compromisso",
+									"value": "reuniao",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
 	],
 	"auth": {
 		"type": "bearer",
