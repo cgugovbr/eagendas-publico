@@ -3,7 +3,7 @@
 		"_postman_id": "6ea0a93e-2fa4-4e5e-9d14-a96a7c935d16",
 		"name": "e-Agendas - v2 - Consulta",
 		"description": "### Maiores informações favor acessar:\n\n### [https://github.com/cgugovbr/eagendas-publico/](https://github.com/cgugovbr/eagendas-publico/)",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "454997",
 		"_collection_link": "https://evertramos.postman.co/workspace/CGU~e84f8774-c95b-4307-be9f-9aefff261bc8/collection/454997-6ea0a93e-2fa4-4e5e-9d14-a96a7c935d16?action=share&source=collection_link&creator=454997"
 	},
@@ -526,18 +526,7 @@
 								"type": "text"
 							}
 						],
-						"url": {
-							"raw": "{{url}}/api/v2/agentes-publicos-obrigados/1219",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"agentes-publicos-obrigados",
-								"1219"
-							]
-						}
+						"url": "{{url}}/api/v2/agentes-publicos-obrigados/1219"
 					},
 					"response": []
 				},
@@ -698,18 +687,7 @@
 								"disabled": true
 							}
 						],
-						"url": {
-							"raw": "{{url}}/api/v2/compromissos/111799",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"compromissos",
-								"111799"
-							]
-						}
+						"url": "{{url}}/api/v2/compromissos/111799"
 					},
 					"response": []
 				},
@@ -1009,18 +987,7 @@
 								"type": "text"
 							}
 						],
-						"url": {
-							"raw": "{{url}}/api/v2/presentes-hospitalidades/36",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"presentes-hospitalidades",
-								"36"
-							]
-						}
+						"url": "{{url}}/api/v2/presentes-hospitalidades/36"
 					},
 					"response": []
 				},
@@ -1264,18 +1231,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "{{url}}/api/v2/viagens/985",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"viagens",
-								"985"
-							]
-						}
+						"url": "{{url}}/api/v2/viagens/985"
 					},
 					"response": []
 				},
@@ -1507,17 +1463,7 @@
 								"type": "text"
 							}
 						],
-						"url": {
-							"raw": "{{url}}/api/v2/objetivos-compromissos",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"objetivos-compromissos"
-							]
-						}
+						"url": "{{url}}/api/v2/objetivos-compromissos"
 					},
 					"response": []
 				},
@@ -1572,18 +1518,7 @@
 								"type": "text"
 							}
 						],
-						"url": {
-							"raw": "{{url}}/api/v2/objetivos/9",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"v2",
-								"objetivos",
-								"9"
-							]
-						}
+						"url": "{{url}}/api/v2/objetivos/9"
 					},
 					"response": []
 				},
@@ -1664,13 +1599,9 @@
 	],
 	"auth": {
 		"type": "bearer",
-		"bearer": [
-			{
-				"key": "token",
-				"value": "{{tokenv2}}",
-				"type": "string"
-			}
-		]
+		"bearer": {
+			"token": "{{tokenv2}}"
+		}
 	},
 	"event": [
 		{
