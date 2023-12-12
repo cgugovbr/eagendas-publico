@@ -18,9 +18,9 @@ Este repositório destina-se a fornecer informações técnicas, auxiliando a co
 
 O repositório está organizado da seguinte forma:
 
-- **`/docs`**: Documentação do sistema, manuais do usuário e outras informações relevantes.
-- **`/api-consulta`**: Documentação técnica sobre a API de consulta.
-- **`/api-integracao`**: Documentação técnica sobre a API de integração.
+- [**`/docs`**:](./docs) Documentação do sistema, manuais do usuário e outras informações relevantes.
+- [**`/api-consulta`**:](./api-consulta) Documentação técnica sobre a API de consulta.
+- [**`/api-integracao`**:](./api-integracao) Documentação técnica sobre a API de integração.
 
 #### Documentação
 
