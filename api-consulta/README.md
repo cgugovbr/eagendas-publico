@@ -3,8 +3,8 @@
 Esta é uma API pública, disponível para qualquer cidadão.
 
 ## URL da API
-- Ambiente de Produção: https://eagendas.cgu.gov.br/api
-- Ambiente de Treinamento: https://eagendastreinamento.cgu.gov.br/api
+- Ambiente de Produção: https://eagendas.cgu.gov.br/api/v2
+- Ambiente de Treinamento: https://eagendastreinamento.cgu.gov.br/api/v2
 
 ## Pré-requisitos
 
