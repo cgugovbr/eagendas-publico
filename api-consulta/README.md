@@ -8,10 +8,19 @@ Esta é uma API pública, disponível para qualquer cidadão.
 
 ## Pré-requisitos
 
-1. Token de acesso 
+- Token de acesso 
 
 Para utilizar a API, é necessário um token. 
 Siga as instruções abaixo para gerar seu próprio token:
+
+1. Faça login no sistema
+2. Acesso a página de perfil do usuário
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/70737104-ad13-4f23-9959-67e981a14456)
+
+3. Acesse o menu 'Meus tokens' e gere um novo token
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/45860676-c998-471d-8d6b-86793365d712)
+  
+> Lembre-se de guardar esse token, pois ele não poderá ser mostrado novamente.
 
 ## Testes
 
