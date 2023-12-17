@@ -61,8 +61,26 @@ Para facilitar os testes, disponibilizamos arquivos a serem importados no Postma
 Siga os passos abaixo para importar e configurar o Postman:
 
 1. Importe os arquivos
-2. Configure o token
+  - Clique em '_import_':
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/e7888792-6b6a-438e-a281-523dd8cfe46e)
+
+  - Cole a * **URLs** nesta caixa:
+
+    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/5b50886f-9429-42ad-a624-4c55186880b8)
+
+> **[IMPORTANTE]** Siga o passo para cada uma das URLs abaixo:
+> - https://raw.githubusercontent.com/cgugovbr/eagendas-publico/main/api-consulta/postman/e-Agendas%20-%20treinamento%20-%20v2.postman_environment.json
+> - https://raw.githubusercontent.com/cgugovbr/eagendas-publico/main/api-consulta/postman/e-Agendas%20-%20v2%20-%20Consulta.postman_collection.json
+ 
+2. Cole seu token no campo abaixo e clique em '_save_':
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/b0d57bf3-511f-4d34-a5b7-5d961794ad31)
+
 3. Teste uma requisição
+  - Selecione a variável que foi importada
+    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/68899c8e-a24d-42d4-bef7-f5a3149cfc6b)
+
+  - Escolha uma requisição para teste e clique em '_Send_'
+    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/a79c313f-464a-4560-bafd-ea846e17f49a)
 
 ### Curl
 
