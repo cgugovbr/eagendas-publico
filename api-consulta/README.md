@@ -32,10 +32,21 @@ ou ainda diretamente usando _curl_.
 Para utilizar o swagger, siga os passos abaixo:
 
 1. Acessar a documentação por meio da página (/api/docs): https://eagendastreinamento.cgu.gov.br/api/docs
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/fa5719bc-de71-40ae-a64f-cedb3451dfd8)
 
 2. Autorize o acesso utilizando o token do usuário, conforme instruções abaixo:
+  - Clique em Authorize:
+     ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/a55713d9-9e20-412b-a2d6-69d5bd44f042)
 
-3. Teste uma requisição.
+  - Insira o token no campo 'value' e clique em '_Authorize_'
+     ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/6bf4cd30-c818-4cc9-b726-60bbdf0d0ec5)
+
+3. Teste uma requisição:
+  - clique na requisição desejada e clique em '_Try it out_':
+    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/43369518-a6ca-40d1-ad18-cfbe5e0b06d7)
+
+  - Clique em '_Execute_'
+    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/90249192-8127-41a0-b6e3-a371cef3a8a2) 
 
 ### Postman
 
