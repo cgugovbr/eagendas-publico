@@ -18,7 +18,7 @@ Siga as instruções abaixo para gerar seu próprio token:
    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/70737104-ad13-4f23-9959-67e981a14456)
 
 3. Acesse o menu 'Meus tokens' e gere um novo token
-   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/45860676-c998-471d-8d6b-86793365d712)
+   ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/b174bbfd-a3ac-465c-b1b3-f48cc2a9e5fc)
   
 > Lembre-se de guardar esse token, pois ele não poderá ser mostrado novamente.
 
