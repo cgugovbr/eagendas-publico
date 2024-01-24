@@ -31,7 +31,7 @@ ou ainda diretamente usando _curl_.
 
 Para utilizar o swagger, siga os passos abaixo:
 
-1. Acessar a documentação por meio da página (/api/docs): https://eagendastreinamento.cgu.gov.br/api/docs
+1. Acessar a documentação por meio da página (/api/docs): https://eagendas.cgu.gov.br/api/docs
    ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/fa5719bc-de71-40ae-a64f-cedb3451dfd8)
 
 2. Autorize o acesso utilizando o token do usuário, conforme instruções abaixo:
