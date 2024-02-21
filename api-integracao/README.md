@@ -46,7 +46,7 @@ que oferece uma versão pessoal gratuita, para testar a API do e-Agendas.
 Para facilitar os testes, disponibilizamos arquivos a serem importados no Postman:
 
 - [Variáveis](./postman/e-Agendas%20-%20treinamento%20-%20v2.postman_environment.json)
-- [Rotas da API](./postman/e-Agendas%20-%20v2%20-%20Consulta.postman_collection.json)
+- [Rotas da API](./postman/e-Agendas%20-%20v2%20-%20INTEGRAÇÃO.postman_collection.json)
 
 Siga os passos abaixo para importar e configurar o Postman:
 
