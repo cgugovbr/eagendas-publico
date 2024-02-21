@@ -41,6 +41,8 @@ Para utilizar o swagger, siga os passos abaixo:
   - Insira o token no campo 'value' e clique em '_Authorize_'
      ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/6bf4cd30-c818-4cc9-b726-60bbdf0d0ec5)
 
+> [IMPORTANTE] O swagger utiliza **o ambiente de Treinamento**, portanto o token que deve ser utilizado aqui deve ser criado no ambiente de treinamento.
+
 3. Teste uma requisição:
   - clique na requisição desejada e clique em '_Try it out_':
     ![image](https://github.com/cgugovbr/eagendas-publico/assets/905951/43369518-a6ca-40d1-ad18-cfbe5e0b06d7)
