@@ -841,7 +841,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{url}}/api/v2/compromissos/111799",
+							"raw": "{{url}}/api/v2/compromissos/190432",
 							"host": [
 								"{{url}}"
 							],
@@ -849,7 +849,7 @@
 								"api",
 								"v2",
 								"compromissos",
-								"111799"
+								"190432"
 							]
 						}
 					},
@@ -1257,6 +1257,60 @@
 								"v2",
 								"orgaos",
 								"832"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrgaoPorCodigoSIORG",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Validate the 'sucesso' field is true\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData.sucesso).to.be.true;",
+									"});",
+									"",
+									"pm.test(\"Validate the 'resposta' object is present and not empty\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta).to.exist.and.to.not.be.empty;",
+									"});",
+									"",
+									"pm.test(\"Verify that the 'orgaos' array is present and contains at least one element\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.resposta['orgaos']).to.exist.and.to.be.an('array').and.to.have.lengthOf.at.least(1);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v2/orgaos/siorg/214460",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v2",
+								"orgaos",
+								"siorg",
+								"214460"
 							]
 						}
 					},
