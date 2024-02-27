@@ -89,7 +89,7 @@ Siga os passos abaixo para importar e configurar o Postman:
 Para testar a API via _curl_, utilize o código abaixo com o seu token de acesso.
 
 ```bash
-curl -XGET http://eagendastreinamento.cgu.gov.br/api/v2/objetivos-compromissos -H "Accept: application/json" -H "Authorization: Bearer SEU_TOKEN_AQUI"
+curl -XGET https://eagendastreinamento.cgu.gov.br/api/v2/objetivos-compromissos -H "Accept: application/json" -H "Authorization: Bearer SEU_TOKEN_AQUI"
 ```
 
 > Caso tenha um _jq_ instalado para visualizar os dados forma mais clara poderia utilizar "| jq" ao final:
