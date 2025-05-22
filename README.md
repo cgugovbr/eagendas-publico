@@ -20,17 +20,15 @@ O repositório está organizado da seguinte forma:
 
 - [**`/docs`**:](./docs) Documentação do sistema, manuais do usuário e outras informações relevantes.
 - [**`/api-consulta`**:](./api-consulta) Documentação técnica sobre a API de consulta.
-- [**`/api-integracao`**:](./api-integracao) Documentação técnica sobre a API de integração.
 
 #### Documentação
 
-A documentação completa do sistema está disponível em [link para a documentação no diretório `/docs`].
+A documentação completa do sistema está disponível em [**`/docs`**](./docs)
 
 #### API
 
-O sistema disponibiliza API de consulta, disponível publicamente à toda a sociedade e API de integração para os órgãos públicos.
+O sistema disponibiliza API de consulta, disponível publicamente à toda a sociedade.
 
 ## Contato
 
-Para mais informações ou suporte, entre em contato através de [inserir informações de contato, como e-mail ou links para redes sociais].
-
+Para mais informações ou suporte, entre em contato através do e-mail: eagendas@cgu.gov.br
